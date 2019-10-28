@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" ></script>
-    <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Templates -->
+    <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+    
     <script src="index.js"></script>
-    <title>JUquery Template sample</title>
+    <title>Hello, world!</title>
 </head>
 <body>
     <div></div>
     <script id="myTemplate" type="text/x-jquery-tmpl">
         <tr>
-            <td>${FirstName}</td>
-            <td>${LastName}</td>
-            <td>${Age}</td>
+            <td>${firstName}</td>
+            <td>${lastName}</td>
+            <td>${age}</td>
         </tr>
     </script>
-    <table>
+    <table class="table table-striped">
         <thead>
-            <th>
-                First Name
-            </th>
-            <th>
-                Last Name
-            </th>
-            <th>
-                Age
-            </th>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
         </thead>
-        <tbody id="employeeContainer">
+        <tbody>
+            
         </tbody>
     </table>
 </body>
