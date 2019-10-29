@@ -13,22 +13,28 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    
     <!-- jQuery Templates -->
     <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
-    
     <script src="index.js"></script>
-    <title>Hello, world!</title>
+    <title>jQuery Templates</title>
 </head>
 <body>
-    <div></div>
-    <script id="myTemplate" type="text/x-jquery-tmpl">
+    <script id="array" type="text/x-jquery-tmpl">
         <tr>
             <td>${firstName}</td>
             <td>${lastName}</td>
             <td>${age}</td>
         </tr>
     </script>
+    <script id="object" type="text/x-jquery-tmpl">
+        <p>${name}</p>
+    </script>
+    <script id="boolean" type="text/x-jquery-tmpl">
+        <p>${boolean ? 'Active' : 'Inactive'}</p>
+    </script>
+
+    <h2 class="text-center">Array</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -37,9 +43,15 @@
                 <th scope="col">Age</th>
             </tr>
         </thead>
-        <tbody>
-            
-        </tbody>
+        <tbody></tbody>
     </table>
+
+    <hr class="mb-4"></hr>
+    <h2 class="text-center">Object</h2>
+    <div id="object-data"></div>
+
+    <hr class="mb-4"></hr>
+    <h2 class="text-center">Boolean</h2>
+    <div id="boolean-data"></div>
 </body>
 </html>
