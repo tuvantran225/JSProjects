@@ -1,0 +1,17 @@
+.container {
+    border: 1px solid black;
+    height: 500px;
+    display: flex;
+}
+
+#left-panel {
+    border: 1px solid black;
+    width: 30%;
+    height: 498px;
+}
+
+#main-content {
+    border: 1px solid black;
+    width: 70%;
+    height: 498px;
+}

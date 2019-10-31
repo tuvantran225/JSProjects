@@ -6,8 +6,8 @@ $(document).ready(() => {
     //     success: (data) => {
     //         console.log(data);
     //     },
-    //     error: (error) => {
-    //         console.log(error);
+    //     error: (message) => {
+    //         console.log(message);
     //     }
     // });
 
@@ -16,11 +16,13 @@ $(document).ready(() => {
         type: "GET",
         dateType: "html"
     })
-    .done((data) => {
-        console.log(data);
+    .done((response) => {
+        if (response.status === 1) {
+            console.log(response.data);
+        }
     })
-    .fail((error) => {
-        console.log(error);
+    .fail((message) => {
+        console.log(message);
     });
 
     // $.ajax({
@@ -31,7 +33,7 @@ $(document).ready(() => {
     // .done((data) => {
     //     console.log(data);
     // })
-    // .fail((error) => {
-    //     console.log(error);
+    // .fail((message) => {
+    //     console.log(message);
     // });
 });
